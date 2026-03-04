@@ -1,0 +1,188 @@
+/* Google font for modern feel */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: "Inter", sans-serif;
+    min-height:100vh;
+    background: linear-gradient(135deg,#6366f1,#8b5cf6,#a855f7);
+    padding:18px;
+    color:#1f2937;
+}
+
+/* Main container */
+.container{
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(16px);
+    border-radius:16px;
+    padding:18px;
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+    box-shadow:0 8px 30px rgba(0,0,0,0.25);
+}
+
+/* Title */
+h1{
+    font-size:22px;
+    font-weight:600;
+    color:white;
+}
+
+/* description text */
+.container p{
+    font-size:13px;
+    color:rgba(255,255,255,0.9);
+    line-height:1.5;
+}
+
+/* textareas */
+textarea{
+    width:100%;
+    min-height:120px;
+    border-radius:12px;
+    border:none;
+    outline:none;
+    padding:12px;
+    font-size:13px;
+    resize:vertical;
+    background: rgba(255,255,255,0.9);
+    box-shadow: inset 0 2px 6px rgba(0,0,0,0.1);
+    transition:all .2s ease;
+}
+
+textarea:focus{
+    transform:scale(1.02);
+    box-shadow:0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* action area */
+.actions{
+    display:flex;
+    justify-content:center;
+}
+
+/* summarize button */
+#summarizeBtn{
+    width:100%;
+    padding:10px;
+    border:none;
+    border-radius:12px;
+    font-weight:600;
+    color:white;
+    cursor:pointer;
+    background: linear-gradient(90deg,#3b82f6,#6366f1);
+    box-shadow:0 4px 12px rgba(0,0,0,0.25);
+    transition:all .2s ease;
+}
+
+#summarizeBtn:hover{
+    transform:translateY(-2px);
+    box-shadow:0 6px 18px rgba(0,0,0,0.3);
+}
+
+#summarizePageBtn{
+    margin-left:8px;
+    width:100%;
+    padding:10px;
+    border:none;
+    border-radius:12px;
+    font-weight:600;
+    color:white;
+    cursor:pointer;
+    background: linear-gradient(90deg,#2563eb,#1e40af);
+    box-shadow:0 4px 12px rgba(0,0,0,0.25);
+    transition:all .2s ease;
+}
+#summarizePageBtn:hover{
+    transform:translateY(-2px);
+    box-shadow:0 6px 18px rgba(0,0,0,0.3);
+}
+
+/* results card */
+#results{
+    background:white;
+    border-radius:14px;
+    padding:14px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.15);
+}
+
+#results h3{
+    margin-bottom:6px;
+    font-size:15px;
+    color:#4f46e5;
+}
+
+#summaryOutput{
+    font-size:13px;
+    line-height:1.5;
+    color:#374151;
+}
+
+/* Loading container */
+.loading {
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-size:13px;
+    color:#555;
+    margin-top:8px;
+}
+
+/* Hide when not active */
+.hidden{
+    display:none;
+}
+
+/* Spinner animation */
+.spinner{
+    width:16px;
+    height:16px;
+    border:3px solid #ddd;
+    border-top:3px solid #6366f1;
+    border-radius:50%;
+    animation:spin 1s linear infinite;
+}
+
+@keyframes spin{
+    from{ transform:rotate(0deg); }
+    to{ transform:rotate(360deg); }
+}
+
+/* notes section */
+.notes{
+    background:white;
+    border-radius:14px;
+    padding:14px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.15);
+}
+
+.notes h3{
+    margin-bottom:6px;
+    font-size:15px;
+    color:#9333ea;
+}
+
+/* save notes button */
+#saveNotesBtn{
+    margin-top:8px;
+    width:100%;
+    padding:8px;
+    border:none;
+    border-radius:10px;
+    font-size:13px;
+    cursor:pointer;
+    background: linear-gradient(90deg,#10b981,#059669);
+    color:white;
+    transition:all .2s ease;
+}
+
+#saveNotesBtn:hover{
+    transform:translateY(-1px);
+    box-shadow:0 4px 12px rgba(0,0,0,0.25);
+}

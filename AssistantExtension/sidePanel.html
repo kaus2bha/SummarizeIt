@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SummarizeIt</title>
+    <link rel="stylesheet" href="sidePanel.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>SummarizeIt</h1>
+
+    <p>
+        SummarizeIt helps you quickly summarize large amounts of text using AI.
+        Select text from any webpage or paste content below and generate a concise summary.
+    </p>
+
+    <!-- INPUT TEXT -->
+    <textarea id="inputText" placeholder="Paste or select text here..."></textarea>
+
+   <div class="actions">
+    <button id="summarizeBtn">Summarize</button>
+    <button id="summarizePageBtn">Summarize Page</button>
+</div>
+
+    <!-- RESULTS -->
+    <div id="results">
+        <h3>Summary</h3>
+            <div id="loading" class="loading hidden">
+              <div class="spinner"></div>
+              <p>AI is analyzing the text...</p>
+            </div>
+        <p id="summaryOutput"></p>
+    </div>
+
+    <!-- NOTES -->
+    <div class="notes">
+        <h3>Notes</h3>
+        <textarea id="notes" placeholder="Write your notes here..."></textarea>
+        <button id="saveNotesBtn">Save Notes</button>
+    </div>
+
+</div>
+
+<script src="sidepanel.js"></script>
+
+</body>
+</html>
